@@ -26,7 +26,7 @@ int init_engine(){
 int game(GameEngine game_engine){
     //init
 
-    game_engine.InitCallback();
+     game_engine.InitCallback();
 
 
     //game loop

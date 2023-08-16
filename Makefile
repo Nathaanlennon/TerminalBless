@@ -1,8 +1,8 @@
 CC = gcc
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra -g
 LIBS = -lncurses
 
-SRCS = main.c terminalbless.c
+SRCS = /exemple/exemple_main.c terminalbless.c
 
 OBJS = $(SRCS:.c=.o)
 

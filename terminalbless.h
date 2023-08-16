@@ -5,12 +5,16 @@
 #ifndef TERMINALBLESS_TERMINALBLESS_H
 #define TERMINALBLESS_TERMINALBLESS_H
 
-typedef struct{
+typedef struct GameEngine{
     void (*InitCallback)();
     void (*EventCallback)(int key);
     void (*UpdateCallback)();
     void (*DrawCallback)();
-}GameEngine;
+} GameEngine;
+
+typedef struct Data{
+
+}Data;
 
 int init_engine();
 int game(GameEngine game_engine);
