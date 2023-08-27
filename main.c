@@ -1,5 +1,5 @@
 #include <ncurses.h>
-#include "terminalbless.h"
+#include "include/terminalbless.h"
 #include <stdio.h>
 
 

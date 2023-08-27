@@ -1,7 +1,7 @@
 //
 // Created by nathaan on 15/08/23.
 //
-#include "terminalbless.h"
+#include "include/terminalbless.h"
 #include <stdbool.h>
 #include <ncurses.h>
 
@@ -23,17 +23,17 @@ int init_engine(){
     return 0;
 }
 
-int game(GameEngine game_engine){
+int game(Data data, GameEngine game_engine){
     //init
 
-     game_engine.InitCallback();
+     game_engine.InitCallback(data);
 
 
     //game loop
     while(game_running){
-        game_engine.EventCallback(getch());
-        game_engine.UpdateCallback();
-        game_engine.DrawCallback();
+        game_engine.EventCallback(data, getch());
+        game_engine.UpdateCallback(data);
+        game_engine.DrawCallback(data);
     }
 
     return 0;

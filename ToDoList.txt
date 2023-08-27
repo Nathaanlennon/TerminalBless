@@ -1,0 +1,57 @@
+Créer un personnage qui peut se déplacer
+    structure de personnage
+        entité :
+            sprite
+                tableau 2d?
+                fichier texte?
+            position
+                x
+                y
+                layer
+            collision on off
+        Data :
+            pv ?
+
+
+faire des layers
+    incorporer les layer dans les entité
+    print des layers en commençant par le plus haut, 1000 sera derrière 800, etc
+    faire les layers en couches : le background ; le plan derrière le personnage, le plan du personnage et l'avant plan
+variable pour les collisions
+    collision on off dans les entité ; lié au layer
+    pour la gestion de collisions :
+        faire un tp lorsque collision ?
+        vérifier si le prochain mouvement est en collision ?
+        probleme pour les deux : vérifier à chaque instant si collision il y a
+            faire un groupe spécial d'entités pour voir celles qui bougent et vérifier que celles là?
+
+        faire une fonction qui détermine si deux objets entrent en collision
+liste d'entités
+    possibilité 1 : liste de taille finie d'entités
+    possibilité 2 : liste dynamique
+print de map
+    print du layer le plus élevé en premier, et ainsi de suite
+    print de la map visible:
+        map centrée sur le personnage ou libre ? option à activer pour le développer ?
+
+map
+    fonction qui prend en argument la map
+        map sous forme de fichier ?
+            txt ?
+            tableur?
+        tableau ?
+
+        comment indiquer le layer sur les cases de la map pour lecture ?
+            considérer chaque objet ou structure comme entité ?
+            laisser au créateur la liberté sur al map de faire des entités ou directement sur la map ?
+                comment faire pour le layer?
+                    tableau ?
+                    plusieurs superpositions de couches donc differents fichiers ?
+                        arrière plan milieu avant plan et considérer le layer en seulement 3 couches?
+
+systeme de bulle de dialogue
+    aspect
+
+    fonctionnement du dialogue
+        gestion automatique de quand c'est trop long ?
+        retour automatique à la ligne ?

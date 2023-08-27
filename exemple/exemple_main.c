@@ -1,19 +1,22 @@
 #include <ncurses.h>
-#include "../terminalbless.h"
+#include "../include/terminalbless.h"
 #include "exemple_data.h"
 #include <stdio.h>
 
 
-void init(){
+void init(Data data){
 
 }
-void event(int key){
+
+void event(Data data, int key){
 
 }
-void update(){
+
+void update(Data data){
 
 }
-void draw(){
+
+void draw(Data data){
 
 }
 
