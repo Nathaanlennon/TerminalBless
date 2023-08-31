@@ -1,23 +1,24 @@
 #include <ncurses.h>
-#include "../include/terminalbless.h"
+#include "include/terminalbless.h"
 #include "exemple_data.h"
 #include <stdio.h>
+#include "include/usual.h"
 
 
-void init(Data data){
-
-}
-
-void event(Data data, int key){
+void init(Data* data){
 
 }
 
-void update(Data data){
+void event(Data* data, int key){
 
 }
 
-void draw(Data data){
+void update(Data* data){
 
+}
+
+void draw(Data* data){
+    draw_printf(data, "Salut");
 }
 
 int main() {
@@ -28,8 +29,7 @@ int main() {
     game_engine.EventCallback = event;
     game_engine.UpdateCallback = update;
     game_engine.DrawCallback = draw;
-
-    game(game_engine);
+    game(&data, game_engine);
 
     return 0;
 }

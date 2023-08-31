@@ -21,7 +21,7 @@ variable pour les collisions
     collision on off dans les entité ; lié au layer
     pour la gestion de collisions :
         faire un tp lorsque collision ?
-        vérifier si le prochain mouvement est en collision ?
+        vérifier si le prochain mouvement est en collision ? //jeuxjeux suggère
         probleme pour les deux : vérifier à chaque instant si collision il y a
             faire un groupe spécial d'entités pour voir celles qui bougent et vérifier que celles là?
 

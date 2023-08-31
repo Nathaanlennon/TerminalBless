@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 LIBS = -lncurses
 
-SRCS = /exemple/exemple_main.c terminalbless.c
+SRCS = exemple_main.c terminalbless.c usual.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -13,10 +13,13 @@ all: $(TARGET)
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^ $(LIBS)
 %.o: %.c
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -c $< -o $@
 
 run: $(TARGET)
 	./$(TARGET)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+
+cleanrun: clean
+	$(MAKE) run

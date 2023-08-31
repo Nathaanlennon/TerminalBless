@@ -23,7 +23,7 @@ int init_engine(){
     return 0;
 }
 
-int game(Data data, GameEngine game_engine){
+int game(Data* data, GameEngine game_engine){
     //init
 
      game_engine.InitCallback(data);
@@ -34,6 +34,7 @@ int game(Data data, GameEngine game_engine){
         game_engine.EventCallback(data, getch());
         game_engine.UpdateCallback(data);
         game_engine.DrawCallback(data);
+        refresh();
     }
 
     return 0;

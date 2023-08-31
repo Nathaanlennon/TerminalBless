@@ -4,6 +4,7 @@
 
 #ifndef TERMINALBLESS_DATA_H
 #define TERMINALBLESS_DATA_H
+#include <stdbool.h>
 
 typedef struct{
     int width;
